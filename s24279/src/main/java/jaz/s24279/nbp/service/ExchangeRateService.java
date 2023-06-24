@@ -40,7 +40,7 @@ public class ExchangeRateService {
         if (startDate.isAfter(endDate)) {
             throw new WrongDate("Start date: " + startDate + " occurs after end date: " + endDate);
         }
-        if (startDate.isBefore(LocalDate.of(2022, 02, 01))) {
+        if (startDate.isBefore(LocalDate.of(2002, 02, 01))) {
             throw new WrongDate("Archive are stored since 2002-01-02. Choose different start date");
         }
 
